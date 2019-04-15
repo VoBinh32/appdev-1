@@ -112,15 +112,15 @@ void testTone(int c, int f, float d) {
     h.SampleRate = 44100;
     h.BitsSample = 16;
     if (c == 1) { // For mono channel
-        h.ByteRate = h.SampleRate * c * h.BitsSample;
-        h.BlockAlign = c * h.BitsSample / 16;
+        h.ByteRate = h.SampleRate * c * h.BitsSample / 8;
+        h.BlockAlign = c * h.BitsSample / 8;
         h.Subchunk2Size = d * h.SampleRate * h.BlockAlign;
         h.ChunkSize = h.Subchunk2Size + 36;
     }
     // Prepare sound data
     short data[441000];
     for (int i = 0; i < d * h.SampleRate; i++) {
-        data[i] = sin(2 * PI * i / 44100);
+        data[i] = 32767.0 * sin(2 * PI * i * f/ 44100);
     }
     FILE *fg = fopen("testTone.wav", "w");
     if (fg == NULL) {
