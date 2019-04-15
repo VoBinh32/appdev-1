@@ -89,7 +89,7 @@ void fillID(char *dst, const char *m) {
 }
 
 void testTone(int c, int f, float d) {
-    if (f < 60 || f > 16000) {
+    if (f < 30 || f > 16000) {
         printf("Frequency is not in the range.\n");
         return;
     }
