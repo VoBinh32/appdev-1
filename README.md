@@ -20,3 +20,29 @@ The application is running on a Raspberry Pi 3 model B. This Pi should come with
 
 1.2. Install Libcurl library
 
+...
+
+2. Installation Instructions
+
+...
+
+3. Operating Instructions
+
+..
+
+4. File list (Manifest)
+
+Source: comm.c comm.h main.c makefile screen.c screen.h sound.c sound.h
+Runtime files: test.wav testTone.wav
+
+5. Copyright / Copyleft
+
+This project is licensed under the MIT License
+
+6. Contact Information
+
+Gao Chao
+
+7. Credits and Acknowledgements
+
+...
