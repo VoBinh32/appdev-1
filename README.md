@@ -1,4 +1,4 @@
-Application Development I-IT-1N4
+#Application Development I-IT-1N4
 This project is to run a Raspberry Pi as an audio device. The device is able to do 2 functions: as a sound collector and as a test-tone generator.
 
 Table of Content
@@ -47,8 +47,8 @@ ctl.!default {
 
 3. Operating Instructions
 
-./sound.out to without any arguments to generate a decibel barchart of captured sound.
-./sound.out <sound frequecy>: generate a testTone.wav with specified options.
+- ./sound.out to without any arguments to generate a decibel barchart of captured sound.
+- ./sound.out <sound frequecy>: generate a testTone.wav with specified options.
 
 4. File list (Manifest)
 
