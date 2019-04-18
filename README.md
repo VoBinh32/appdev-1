@@ -40,30 +40,30 @@ ctl.!default {
 * Run “sudo apt-get install libcurl3” to install the libcurl3.
 * Run “sudo apt-get install libcurl4-openssl-dev” to install the development API of libcurl4.
 
-2. Installation Instructions
+## 2. Installation Instructions
 
-- Clone the project.
-- Make.
-- Now sound.out should be built in the same folder.
+* Clone the project.
+* Make.
+* Now sound.out should be built in the same folder.
 
-3. Operating Instructions
+## 3. Operating Instructions
 
-- ./sound.out to without any arguments to generate a decibel barchart of captured sound.
-- ./sound.out <sound frequecy>: generate a testTone.wav with specified options.
+* ./sound.out to without any arguments to generate a decibel barchart of captured sound.
+* ./sound.out <sound frequecy>: generate a testTone.wav with specified options.
 
-4. File list (Manifest)
+## 4. File list (Manifest)
 
-- Source: comm.c comm.h main.c makefile screen.c screen.h sound.c sound.h
-- Runtime files: test.wav testTone.wav
+* Source: comm.c comm.h main.c makefile screen.c screen.h sound.c sound.h
+* Runtime files: test.wav testTone.wav
 
-5. Copyright / Copyleft
+## 5. Copyright / Copyleft
 
-This project is licensed under the MIT License.
+* This project is licensed under the MIT License.
 
-6. Contact Information
+## 6. Contact Information
 
-Hai Vu - andreehai1011@gmail.com
+* Hai Vu - andreehai1011@gmail.com
 
-7. Credits and Acknowledgements
+## 7. Credits and Acknowledgements
 
-Thanks Dr. Gao Chao for instructions in making this project.
+* Thanks Dr. Gao Chao for instructions in making this project.
