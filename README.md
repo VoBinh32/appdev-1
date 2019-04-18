@@ -51,7 +51,7 @@ ctl.!default {
 ## 3. Operating Instructions
 
 * *./sound.out* without any arguments to generate a decibel barchart of captured sound.
-* *./sound.out* *sound frequecy*: generate a testTone.wav with specified options.
+* *./sound.out* *sound_frequecy*: generate a testTone.wav with specified options.
 
 ## 4. File list (Manifest)
 
