@@ -21,8 +21,8 @@ Application Development I-IT-1N4
 * Boot up RPi, and apply the USB sound card. Use “lsusb” command to check if your USB sound card is mounted
 * Use “sudo nano /etc/asound.conf”command and put following content to the file:  
 pcm.!default {  
-  type plug  
-  slave {  
+> type plug  
+> slave {  
     pcm "hw:1,0"  
   }  
 }  
