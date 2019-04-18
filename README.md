@@ -11,16 +11,16 @@ Application Development I-IT-1N4
     6. Contact Information
     7. Credits and Acknowledgements
 
-## 1. Configuration Instructions
+# 1. Configuration Instructions
 
 * The application is running on a Raspberry Pi 3 model B. This Pi should come with a USB sound card, a network connection, a microphone.
 
-1.1. Configure USB sound card as default audio device
+### 1.1. Configure USB sound card as default audio device
 
 * Raspberry Pi onboard sound card doesn’t have microphone interface. We have to change the default audio device to be USB sound card.
 * Boot up RPi, and apply the USB sound card. Use “lsusb” command to check if your USB sound card is mounted
 * Use “sudo nano /etc/asound.conf” command and put following content to the file:
-
+```
 pcm.!default {
   type plug
   slave {
@@ -31,7 +31,7 @@ ctl.!default {
     type hw
     card 1
 }
-
+```
 * Go to your home directory. Use _“nano .asoundrc”_ command and put the same content to the file.
 * Run “alsamixer” you should be able to see that USB sound card is the default audio device. For a more sensitive sound detection, it is better to maximize the volume of “Mic”.
 
