@@ -20,11 +20,11 @@ Application Development I-IT-1N4
 * Raspberry Pi onboard sound card doesn’t have microphone interface. We have to change the default audio device to be USB sound card.
 * Boot up RPi, and apply the USB sound card. Use “lsusb” command to check if your USB sound card is mounted
 * Use “sudo nano /etc/asound.conf”command and put following content to the file:  
-pcm.!default {  
+* pcm.!default {  
 > type plug  
 > slave {  
-    pcm "hw:1,0"  
-  }  
+>> pcm "hw:1,0"  
+> }  
 }  
 ctl.!default {  
     type hw  
