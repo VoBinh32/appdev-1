@@ -1,6 +1,6 @@
 Application Development I-IT-1N4
 ================================
-This project is to run a Raspberry Pi as an audio device. The device is able to do 2 functions: as a sound collector and as a test-tone generator.
+* This project is to run a Raspberry Pi as an audio device. The device is able to do 2 functions: as a sound collector and as a test-tone generator.
 
 ## Table of Content
     1. Configuration Instructions
@@ -13,7 +13,7 @@ This project is to run a Raspberry Pi as an audio device. The device is able to 
 
 ## 1. Configuration Instructions
 
-The application is running on a Raspberry Pi 3 model B. This Pi should come with a USB sound card, a network connection, a microphone.
+* The application is running on a Raspberry Pi 3 model B. This Pi should come with a USB sound card, a network connection, a microphone.
 
 1.1. Configure USB sound card as default audio device
 
@@ -30,15 +30,15 @@ ctl.!default {
     type hw
     card 1
 }
-- Go to your home directory. Use “nano .asoundrc” command and put the same content to the file.
-- Run “alsamixer” you should be able to see that USB sound card is the default audio device. For a more sensitive sound detection, it is better to maximize the volume of “Mic”.
+* Go to your home directory. Use “nano .asoundrc” command and put the same content to the file.
+* Run “alsamixer” you should be able to see that USB sound card is the default audio device. For a more sensitive sound detection, it is better to maximize the volume of “Mic”.
 
 1.2. Install Libcurl library
 
-- First use command "ls /usr/include/curl" or "ls /usr/include/arm-linux-gnueabihf/curl" to identify that libcurl library is installed.
-- If the folder doesn’t exist. Run “sudo apt-get update” to update the application list.
-- Run “sudo apt-get install libcurl3” to install the libcurl3.
-- Run “sudo apt-get install libcurl4-openssl-dev” to install the development API of libcurl4.
+* First use command "ls /usr/include/curl" or "ls /usr/include/arm-linux-gnueabihf/curl" to identify that libcurl library is installed.
+* If the folder doesn’t exist. Run “sudo apt-get update” to update the application list.
+* Run “sudo apt-get install libcurl3” to install the libcurl3.
+* Run “sudo apt-get install libcurl4-openssl-dev” to install the development API of libcurl4.
 
 2. Installation Instructions
 
