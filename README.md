@@ -18,7 +18,7 @@ Application Development I-IT-1N4
 ### 1.1. Configure USB sound card as default audio device
 
 * Raspberry Pi onboard sound card doesn’t have microphone interface. We have to change the default audio device to be USB sound card.
-* Boot up RPi, and apply the USB sound card. Use `“lsusb”` command to check if your USB sound card is mounted
+* Boot up RPi, and apply the USB sound card. Use *lsusb* command to check if your USB sound card is mounted
 * Use *sudo nano /etc/asound.conf* command and put following content to the file:
 ```
 pcm.!default {
@@ -32,15 +32,15 @@ ctl.!default {
     card 1
 }
 ```
-* Go to your home directory. Use _“nano .asoundrc”_ command and put the same content to the file.
-* Run “alsamixer” you should be able to see that USB sound card is the default audio device. For a more sensitive sound detection, it is better to maximize the volume of “Mic”.
+* Go to your home directory. Use *nano .asoundrc* command and put the same content to the file.
+* Run *alsamixer* you should be able to see that USB sound card is the default audio device. For a more sensitive sound detection, it is better to maximize the volume of “Mic”.
 
 ### 1.2. Install Libcurl library
 
-* First use command "ls /usr/include/curl" or "ls /usr/include/arm-linux-gnueabihf/curl" to identify that libcurl library is installed.
-* If the folder doesn’t exist. Run “sudo apt-get update” to update the application list.
-* Run “sudo apt-get install libcurl3” to install the libcurl3.
-* Run “sudo apt-get install libcurl4-openssl-dev” to install the development API of libcurl4.
+* First use command *ls /usr/include/curl* or *ls /usr/include/arm-linux-gnueabihf/curl* to identify that libcurl library is installed.
+* If the folder doesn’t exist. Run *sudo apt-get update* to update the application list.
+* Run *sudo apt-get install libcurl3* to install the libcurl3.
+* Run *sudo apt-get install libcurl4-openssl-dev* to install the development API of libcurl4.
 
 ## 2. Installation Instructions
 
@@ -50,8 +50,8 @@ ctl.!default {
 
 ## 3. Operating Instructions
 
-* ./sound.out to without any arguments to generate a decibel barchart of captured sound.
-* ./sound.out <sound frequecy>: generate a testTone.wav with specified options.
+* *./sound.out* without any arguments to generate a decibel barchart of captured sound.
+* *./sound.out* *sound frequecy*: generate a testTone.wav with specified options.
 
 ## 4. File list (Manifest)
 
