@@ -21,16 +21,16 @@ Application Development I-IT-1N4
 * Boot up RPi, and apply the USB sound card. Use “lsusb” command to check if your USB sound card is mounted
 * Use “sudo nano /etc/asound.conf”command and put following content to the file:  
 pcm.!default {  
-  type plug
-  slave {
-    pcm "hw:1,0"
-  }
+  type plug  
+  slave {  
+    pcm "hw:1,0"  
+  }  
 }  
-ctl.!default {
-    type hw
-    card 1
+ctl.!default {  
+    type hw  
+    card 1  
 }  
-* Go to your home directory. Use “nano .asoundrc” command and put the same content to the file.
+* Go to your home directory. Use _“nano .asoundrc”_ command and put the same content to the file.
 * Run “alsamixer” you should be able to see that USB sound card is the default audio device. For a more sensitive sound detection, it is better to maximize the volume of “Mic”.
 
 1.2. Install Libcurl library
